@@ -6,8 +6,17 @@ console.log(blogData);
 function App() {
   return (
     <div className="App">
-      You're on your own from here! Follow the deliverables; test things out in
-      the browser as you write your code; and good luck!
+      <div>
+        {/* header */}
+        <h1>{blogData.name}</h1>
+      </div>
+      <div>
+        {/* about */}
+        <aside>
+          <img alt="blog logo">{blogData.image}</img>
+          <p>{blogData.about}</p>
+        </aside>
+      </div>
     </div>
   );
 }
